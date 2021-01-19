@@ -1,0 +1,26 @@
+
+/* ----------------- */
+/* EMPRESA
+/* ----------------- */
+
+.empresa{
+    background-color: rgb(235, 235, 235);
+    .container-fluid{
+        font-family: 'Qucksand';
+        .row{
+            .empresa__cajas{
+                img{
+                    image-rendering: auto;
+                    width: 100%;
+                }
+                h1, h2{
+                    color:white;
+                }
+                p{
+                    font-weight: 900;
+                    color:white;
+                }
+            }
+        }
+    }
+}

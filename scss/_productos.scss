@@ -1,0 +1,92 @@
+$menu-color: rgb(255, 0, 0);
+$dark-red: rgb(167, 0, 0);
+
+/* ----------------- */
+/* CATALOGO  V2
+/* ----------------- */
+
+.titulo{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1800px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+	overflow: hidden;
+	
+	.products{
+		width: 330px;
+		height: 219px;
+		border-radius: 8px;
+		margin: 20px;
+		text-align:center;
+		position:relative;
+		overflow: hidden;
+		color:white;
+
+		img{
+			display:block;
+			position: relative;
+			border-radius: 8px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.hidden{
+			position: absolute;
+			top: 0px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: auto;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			border-radius: 8px;
+			background-color: #ba2b00;
+			display:flex;
+			align-items: center;
+			flex-direction: column;
+
+			p{
+				margin: 10px;
+			}
+
+			span{
+				font-size: 30px;
+    			margin-top:15px;
+			}
+			&:hover{
+				opacity: .9;;
+			}
+			button{
+				border:none;
+				border-radius: 5px;
+				width: 80%;
+				height: 30px;
+				font-size: 20px;
+				background-color: #ffffff;
+				outline: 0;
+				cursor:pointer;
+				position:absolute;
+				bottom: 20px;
+				&:hover{
+					background-color: #ff5e00;
+					box-shadow: inset 0px 0px 6px $menu-color;
+					border:none;
+					color:#000000;
+					opacity: 1;
+					font-weight: bold;
+					text-transform: uppercase;
+					transition: background-color 0.4s ease-out;
+				}
+			}
+		}
+	}
+}

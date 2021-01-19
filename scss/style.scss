@@ -1,0 +1,40 @@
+@import 'menu';
+@import 'index';
+@import 'empresa';
+@import 'productos';
+@import 'nuevadietetica';
+@import 'contacto';
+@import 'footer.scss';
+
+$card-color: #F0EFEF; 
+$menu-color: rgb(255, 0, 0);
+$dark-red: rgb(167, 0, 0);
+$texto: 'Quicksand';
+
+body {
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	@if ('Quicksand' == $texto){
+		font-family: $texto;
+	}else{
+		font-family: sans-serif;
+	}
+    font-size: 20px;
+    width: 100%;
+}
+html {
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	@if ('Quicksand' == $texto){
+		font-family: $texto;
+	}else{
+		font-family: sans-serif;
+	}
+    font-size: 20px;
+    width: 100%;
+}
+
