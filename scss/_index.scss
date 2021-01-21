@@ -75,7 +75,7 @@ $mr-pd:0;
 }
 .rel{
 	width: 330px;
-	height: 430px;
+	height: auto;
 	background-color: $card-color;
 	border-radius: 8px;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -119,15 +119,38 @@ $mr-pd:0;
 
 .mas-vendidos{
 	background-color: whitesmoke;
-
+	max-width: 100vw;
 	.owl-carousel{
-
 		.rel{
 			background-color:white;
+			margin:auto;
 		}
 		.rel:hover{
 			transform: translateY(-15px);
     		box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 		}
 	}
+
+	.owl-nav{
+		display:none;
+	}
+
+	.owl-dots{
+		margin-top:30px;
+		.owl-dot{
+				outline:none;
+		}
+	}
+}
+
+@media screen and (max-width:500px){
+	.mas-vendidos{
+		.owl-carousel{
+			margin:auto;
+			.rel{
+				width: 100%;
+				height: 544px;
+		}
+	}
+}
 }

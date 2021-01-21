@@ -185,6 +185,19 @@ $texto: 'Quicksand', sans-serif;
 
 }
 
+@media (max-width: 900px){
+    .section-contact{
+		.contact-info{
+			border-radius: 8px 8px 0px 0px;
+		}
+		.contact-form{
+			border-radius: 8px 8px;
+		}
+	}
+
+}
+
+
 @media (max-width: 550px){
     .contact-form form p{
         grid-column: 1/3;

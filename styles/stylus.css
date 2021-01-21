@@ -31,6 +31,10 @@
   .menu__sticky .nav-item .nav-link {
     font-size: 1rem; } }
 
+@media (max-width: 459px) {
+  .navbar img {
+    display: none; } }
+
 .carousel-item img {
   height: 500px; }
 
@@ -243,7 +247,7 @@
 
 .rel {
   width: 330px;
-  height: 430px;
+  height: auto;
   background-color: #F0EFEF;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -279,12 +283,27 @@
 /* MAS-VENDIDOS */
 /* ----------------- */
 .mas-vendidos {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  max-width: 100vw; }
   .mas-vendidos .owl-carousel .rel {
-    background-color: white; }
+    background-color: white;
+    margin: auto; }
   .mas-vendidos .owl-carousel .rel:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .mas-vendidos .owl-nav {
+    display: none; }
+  .mas-vendidos .owl-dots {
+    margin-top: 30px; }
+    .mas-vendidos .owl-dots .owl-dot {
+      outline: none; }
+
+@media screen and (max-width: 500px) {
+  .mas-vendidos .owl-carousel {
+    margin: auto; }
+    .mas-vendidos .owl-carousel .rel {
+      width: 100%;
+      height: 544px; } }
 
 /* ----------------- */
 /* EMPRESA
@@ -636,6 +655,12 @@
   .contact-info p {
     padding: 1em;
     text-align: left; } }
+
+@media (max-width: 900px) {
+  .section-contact .contact-info {
+    border-radius: 8px 8px 0px 0px; }
+  .section-contact .contact-form {
+    border-radius: 8px 8px; } }
 
 @media (max-width: 550px) {
   .contact-form form p {

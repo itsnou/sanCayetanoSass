@@ -47,3 +47,11 @@ $dark-red: rgb(167, 0, 0);
 		}
 	}
 }
+
+@media (max-width:459px){
+	.navbar{
+		img{
+			display:none;
+		}
+	}
+}
