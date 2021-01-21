@@ -8,7 +8,7 @@
         <meta name="keywords" content="dietetica, ventas, envios, distribución, mayoristas, minoristas">
         <meta http-equiv="Content-Language" content="es">
         <meta name="distribution" content="global">
-        <meta name="Robots" content="all">
+        <meta name="robots" content="all">
         <title>Dietetica San Cayetano | Mayorista y Minorista</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <!-- owlcarousel -->
@@ -38,25 +38,33 @@
         <img src="./images/index/FINAL.png" alt="">
     </div>
     <!-- menu -->
-    <nav class="main-nav">
-        <div class="nav__logo">
-            <a href="#">Dietetica San Cayetano</a>
+    <nav class="navbar navbar-expand-lg start-header navbar-light bg-light">
+        <a class="navbar-brand p-0" href="#"><img src="/images/index/logo-nav.png" alt=""></a>
+        <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu__sticky collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="components/empresa.html">empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="components/nuevadietetica.html">abri tu dietetica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="components/productos.html">productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="components/contacto.html">contacto</a>
+              </li>
+            </ul>
         </div>
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <span class="menu-icon__line"></span>
-        </label>
-
-        <ul class="nav-links">
-            <li class="nav-link"><a href="#">inicio</a></li>
-            <li class="nav-link"><a href="#">empresa</a></li>
-            <li class="nav-link"><a href="#">abri tu dietetica</a></li>
-            <li class="nav-link"><a href="#">productos</a></li>
-            <li class="nav-link"><a href="#">contacto</a></li>
-        </ul>
     </nav>
     <!-- banner -->
-    <div class="container col-md-12 p-0">
+    <div class="banner container col-md-12 p-0">
         <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,61 +73,59 @@
             </ol>
             <div class="banner carousel-inner">
             <div class="carousel-item active" data-duration="1500">
-                <div class="banner__decoracion">
-                    <div class="banner__texto--slide1">
-                        <a href="components/productos.html">
-                            <h1><span>K</span><span>I</span><span>T</span><span>&nbsp;</span><span>D</span><span>E</span><span>&nbsp;</span><span>N</span><span>U</span><span>E</span><span>C</span><span>E</span><span>S</span><span>!</span></h1>
-                        </a>
+                <div class="banner__decoracion1 text-center">
+                    <div class="banner__texto--slide">
+                        <h2 class="hero-title">
+                            KIT DE NUECES
+                       </h2>
+                         
+                       <h3 class="hero-subtitle">
+                            Prepara tus propias recetas con este kit!
+                       </h3>
+                         
+                       <button type="button" class="hero-button" onclick="location.href='/components/productos.html'">
+                            Comprar &raquo;
+                       </button>
                     </div>
                 </div>
-                <img class="d-block w-100 m-auto mt-3" src="images/index/prueba1.jpg.png" alt="Kit de nueces">
             </div>
             <div class="carousel-item" data-duration="1500">
-                <div class="banner__decoracion">
-                    <div class="banner__texto--slide2">
-                        <a href="components/productos.html">
-                            <h1><span>F</span><span>R</span><span>U</span><span>T</span><span>A</span><span>S</span><span>&nbsp;</span><span>S</span><span>E</span><span>C</span><span>A</span><span>S</span><span>!</span></h1>
-                        </a>
+                <div class="banner__decoracion2">
+                    <div class="banner__texto--slide text-center">
+                        <h2 class="hero-title">
+                            Mix de frutas
+                       </h2>
+                         
+                       <h3 class="hero-subtitle">
+                            Conoce nuestra variedad de frutas secas!
+                       </h3>
+                         
+                       <button type="button" class="hero-button" onclick="location.href='/components/productos.html'">
+                            Comprar &raquo;
+                       </button>
                     </div>
                 </div>
-                <img class="d-block w-100 m-auto mt-3" src="images/index/prueba3.jpg" alt="Frutas Secas">
             </div>
             <div class="carousel-item" data-duration="1500">
-                <div class="banner__decoracion">
-                    <div class="banner__texto--slide3">
-                        <a href="/components/nuevadietetica.html">
-                            <h1 class="banner__texto--dietetica">abri tu dietetica</h1>
-                        </a>
+                <div class="banner__decoracion3">
+                    <div class="banner__texto--slide text-center">
+                        <h2 class="hero-title">
+                            Abri tu propia dietetica
+                       </h2>
+                         
+                       <h3 class="hero-subtitle">
+                            Emprende con nosotrxs, con distintos presupuestos!
+                       </h3>
+                         
+                       <button type="button" class="hero-button" onclick="location.href='/components/nuevadietetica.html'">
+                            Emprender!
+                       </button>
                     </div>
                 </div>
-                <img class="d-block w-100 m-auto mt-3" src="images/index/prueba4.jpg" alt="Inverti en tu dietetica">
             </div>
-            </div>
-            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                <span class="visually-hidden"></span>
-            </a> -->
-        </div>
-    </div>
-    <!-- ALERT SOLO EN MOVILES -->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- dialog body -->
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <ul>
-                        <li>Envios a domicilio, sin cargo, a todo el país.</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
-    <!-- Tabla de productos-->
     <!-- Muestra de productos mas relevantes -->
     <div class="contenedor-index pt-3 pb-3 bg-white">
         <div class="productos-index">
@@ -350,9 +356,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <!-- SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="js/sweetAlert.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

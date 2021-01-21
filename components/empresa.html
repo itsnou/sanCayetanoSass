@@ -36,22 +36,29 @@
     </header>
     <!----- FIN HEADER ------>
     <!------ MENU ------->
-    <nav class="nav">
-        <a href="#">
-            <img src="../images/index/logo-nav.png" alt="logo">
-        </a>
-        <div class="menu__sticky">
-            <ul class="menu__sticky--lista">
-                <a href="../index.html"><li> inicio </li></a>
-                <a href="../components/empresa.html"><li> empresa </li></a> 
-                <a href="../components/productos.html"><li> catalogo </li></a>
-                <a href="../components/nuevadietetica.html"><li> abrí tu dietetica </li></a>
-                <a href="../components/contacto.html"><li> contacto </li></a>
+    <nav class="navbar navbar-expand-lg start-header navbar-light bg-light">
+        <a class="navbar-brand p-0" href="#"><img src="/images/index/logo-nav.png" alt=""></a>
+        <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu__sticky collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="../index.html">inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="empresa.html">empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="nuevadietetica.html">abri tu dietetica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="productos.html">productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">contacto</a>
+              </li>
             </ul>
-            <form class="buscador">
-                <input type="text" placeholder="Escribe aqui" onfocus=this.placeholder="" onblur="this.placeholder = 'Escribe aqui'">
-                <button>Buscar</button>
-            </form>
         </div>
     </nav>
     <!------ FIN MENU ------->
