@@ -36,7 +36,9 @@
   .navbar {
     background: red; }
   .navbar img {
-    display: none; } }
+    display: none; }
+  .navbar button {
+    outline: none; } }
 
 .carousel-item img {
   height: 500px; }
