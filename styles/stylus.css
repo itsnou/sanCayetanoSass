@@ -5,7 +5,8 @@
   position: sticky;
   top: 0;
   z-index: 99;
-  padding: 0px 20px; }
+  padding: 0px 20px;
+  background: #eff2f2; }
 
 .navbar-brand img {
   width: 100%; }
@@ -31,7 +32,9 @@
   .menu__sticky .nav-item .nav-link {
     font-size: 1rem; } }
 
-@media (max-width: 459px) {
+@media (max-width: 991px) {
+  .navbar {
+    background: red; }
   .navbar img {
     display: none; } }
 
@@ -350,6 +353,7 @@
 
 .calidad {
   background-color: #ebebeb;
+  padding-bottom: 3px;
   padding-top: 20px; }
   .calidad .container-fluid {
     font-family: 'Qucksand',sans-serif; }
