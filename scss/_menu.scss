@@ -7,7 +7,6 @@ $dark-red: rgb(167, 0, 0);
 /* ---------- */
 
 .navbar{
-	position:sticky;
 	top:0;
 	z-index: 99;
 	padding: 0px 20px;
@@ -51,14 +50,16 @@ $dark-red: rgb(167, 0, 0);
 
 @media (max-width:991px){
 	.navbar{
-		background:red;
+		button{
+			outline: none;
+		}
 	}
+}
+
+@media(max-width:440px){
 	.navbar{
 		img{
 			display:none;
-		}
-		button{
-			outline: none;
 		}
 	}
 }

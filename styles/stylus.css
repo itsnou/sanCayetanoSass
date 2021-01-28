@@ -2,7 +2,6 @@
 /* MENU  STICKY */
 /* ---------- */
 .navbar {
-  position: sticky;
   top: 0;
   z-index: 99;
   padding: 0px 20px;
@@ -33,12 +32,12 @@
     font-size: 1rem; } }
 
 @media (max-width: 991px) {
-  .navbar {
-    background: red; }
-  .navbar img {
-    display: none; }
   .navbar button {
     outline: none; } }
+
+@media (max-width: 440px) {
+  .navbar img {
+    display: none; } }
 
 .carousel-item img {
   height: 500px; }
@@ -305,9 +304,10 @@
       font-weight: 600px; }
     .contenedor-index .owl-carousel .rel p {
       padding: 0 1rem;
-      font-size: 1rem;
+      font-size: 0.5;
       font-weight: 300px;
-      color: black; }
+      color: black;
+      line-height: 1rem; }
     .contenedor-index .owl-carousel .rel a {
       font-weight: 500;
       text-decoration: none;
@@ -574,7 +574,7 @@
 
 .Logo {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
   margin-top: 25px; }
   .Logo span {
     color: #B70E21; }
